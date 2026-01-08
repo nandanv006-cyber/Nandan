@@ -26,7 +26,7 @@ public class BaseClass {
 	@BeforeClass(alwaysRun = true)
 	public void launchBrowser() throws Throwable {
 		String BROWSER = System.getProperty("browser");
-//		
+		System.out.println("b:"+BROWSER);
 		if (BROWSER.equalsIgnoreCase("chrome"))
 			driver = new ChromeDriver();
 		else if (BROWSER.equalsIgnoreCase("firefox")) {
